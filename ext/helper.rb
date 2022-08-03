@@ -132,7 +132,7 @@ def find_opencv(hint)
               elsif major == 4
                   headers = ["opencv2/core.hpp", "opencv2/core/base.hpp", "opencv2/core/mat.hpp", "opencv2/core/ocl.hpp",
                    "opencv2/core/opengl.hpp", "opencv2/core/optim.hpp", "opencv2/core/persistence.hpp", "opencv2/core/types.hpp",
-                   "opencv2/core/utility.hpp", "opencv2/photo.hpp", "opencv2/imgproc.hpp", "opencv2/imgcodecs.hpp", "opencv2/videoio.hpp",
+                   "opencv2/core/utility.hpp", "opencv2/barcode.hpp", "opencv2/photo.hpp", "opencv2/imgproc.hpp", "opencv2/imgcodecs.hpp", "opencv2/videoio.hpp",
                    "opencv2/highgui.hpp", "opencv2/video/background_segm.hpp", "opencv2/video/tracking.hpp", "opencv2/flann/miniflann.hpp",
                    "opencv2/ml.hpp", "opencv2/features2d.hpp", "opencv2/calib3d.hpp", "opencv2/objdetect.hpp", "opencv2/shape/hist_cost.hpp",
                    "opencv2/shape/shape_transformer.hpp", "opencv2/shape/shape_distance.hpp", "opencv2/stitching.hpp",
