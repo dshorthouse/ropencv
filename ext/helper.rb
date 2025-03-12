@@ -81,7 +81,7 @@ class Vec < Rbind::RClass
         add_operation Rbind::ROperation.new(self.name,nil,paras)
         add_operation Rbind::ROperation.new("all",self,Rbind::RParameter.new("alpha",type))
         add_operation Rbind::ROperation.new("mul",self,Rbind::RParameter.new("other",self))
-        add_operation Rbind::ROperation.new("conj",self) if size == 2 && !type.name =~/int/
+        add_operation Rbind::ROperation.new("conj",self) if size == 2 && type.name && !type.name =~/int/
         add_operation Rbind::ROperation.new("operator==",type.owner.bool,Rbind::RParameter.new("vec",self))
         add_operation Rbind::ROperation.new("operator!=",type.owner.bool,Rbind::RParameter.new("vec",self))
         add_operation Rbind::ROperation.new("operator+",self,Rbind::RParameter.new("vec",self))
